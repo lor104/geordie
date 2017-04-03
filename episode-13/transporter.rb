@@ -11,7 +11,7 @@ class Transporter
   end
 
   def energize(obj:, from:, to:)
-    return
+    return unless @power
 
     if @enterprise.reactor.draw_power(3)
       to.contents << from.contents.delete(obj)
