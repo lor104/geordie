@@ -4,10 +4,11 @@ class Cupboard
 
   def initialize
     @shelf = Location.new
+    stock_shelves
   end
 
   def stock_shelves
-    0.times do
+    5.times do
       @shelf.contents << Glass.new
     end
   end

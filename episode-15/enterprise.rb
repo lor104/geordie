@@ -7,7 +7,7 @@ class Enterprise
     @transporter           = Transporter.new(self)
     @cupboard              = Cupboard.new
     @pantry                = Pantry.new
-    @pantry.shelf.contents = []
+    # @pantry.shelf.contents = []
     @replicator            =  Replicator.new(self)
   end
 
