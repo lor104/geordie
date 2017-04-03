@@ -8,7 +8,7 @@ class Reactor
     @on = false
     @dilithium_crystals = 0
     stock
-    # turn_on
+    turn_on
   end
 
   def stock
