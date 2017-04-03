@@ -15,7 +15,7 @@ class Transporter
 
     if @enterprise.reactor.draw_power(3)
       to.contents << from.contents.delete(obj)
-      return
+      return obj
     end
   end
 

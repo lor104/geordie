@@ -20,6 +20,7 @@ class Replicator
     retrieve_glass
     transport_ingredients_to_glass
     mix
+    binding.pry
     adjust_temperature
     transport_glass_to_replicator_plate
   end
