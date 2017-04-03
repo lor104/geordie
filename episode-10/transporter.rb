@@ -1,3 +1,4 @@
+require 'pry'
 class Transporter
 
   def initialize(enterprise)
@@ -12,10 +13,13 @@ class Transporter
 
   def energize(obj:, from:, to:)
     return unless @power
+    # binding.pry
 
     if @enterprise.reactor.draw_power(3)
       to.contents << from.contents.delete(obj)
       return obj
+    # else
+    #   return obj
     end
   end
 

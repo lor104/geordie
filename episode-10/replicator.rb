@@ -1,3 +1,4 @@
+require 'pry'
 class Replicator
 
   attr_reader :plate
