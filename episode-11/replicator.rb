@@ -1,3 +1,4 @@
+require 'pry'
 class Replicator
 
   attr_reader :plate
@@ -25,6 +26,7 @@ class Replicator
 
   def retrieve_glass
     @enterprise.transporter.energize(obj: @enterprise.cupboard.find_glass, from: @enterprise.cupboard.shelf, to: @tummy)
+    # binding.pry
   end
 
   def glass_in_tummy

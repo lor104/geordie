@@ -28,7 +28,7 @@ class Reactor
   end
 
   def turn_on
-    @on = true if @dilithium_crystals < 0
+    @on = true if @dilithium_crystals > 0
   end
 
   def turn_off
